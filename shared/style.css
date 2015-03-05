@@ -1,0 +1,406 @@
+/*
+	blue: #5BB5E5;
+	red: #EF4360;
+	green: #57BB6C;
+	orange: #F3BB4D;
+	
+	purple: #8250A0;
+*/
+
+* { 
+   	margin: 0; padding: 0; content-box: border-box;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	color: #231F20; 
+}
+a {
+	font-weight: 400;
+	color: #EF4360;
+	text-decoration: none;
+}
+a:hover {
+	color: #8250A0;
+}
+a:active {
+	color: #6D6E70;
+}
+a:visited {
+	color: #F38286;
+}
+.header {
+	background-color: white;
+}
+.header > * {
+	display: inline-block;
+	font-size: 24px;
+	vertical-align: middle;
+	padding: 0 10px;
+	color: #EF018D;
+}
+.header img {
+	padding: 0 0 0 20px;
+}
+.header .subtitle {
+	padding-top:4px;
+	font-size: 16px;
+}
+header.mobile { 
+	display: none; 
+}
+header.mobile .title {
+	font-size: 22px;
+	color: #EF018D;
+	padding: 15px 10px 0px 10px;
+}
+header.mobile .subtitle {
+	font-size: 13px;
+	color: #EF018D;
+}
+header.mobile .download {
+	clear: both;
+	padding: 10px 0; 
+	text-align: center;
+}
+.padding {
+	padding-top: 128px;
+}
+.splash {
+	height: 300px;
+	position: relative;
+	background: #fbfbfb url(images/landingpagephoto.jpg) left 10% no-repeat;
+	background-size: auto 100%;
+}
+.splash > * {
+	color: white;
+}
+.splash h1 {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	font-size: 40px;
+	
+}
+.splash h2 {
+	position: absolute;
+	top: 180px;
+	left: 40px;
+	font-size: 24px; 
+}
+.splash .button {
+	position: absolute;
+	top: 220px;
+	left: 40px;
+}
+nav {
+}
+nav table { 
+	width: 100%;
+	border-collapse: collapse;
+}
+nav td { 
+	width: 25%; 
+	height: 50px; 
+	vertical-align: middle; 
+	position: relative;
+}
+nav a, nav a:visited {
+	display: block; 
+	margin: 5px 5px 5px 55px;
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+}
+nav .nav_arrow {
+	background: white url('images/icons/arrow_icon.svg') 25px 50% no-repeat;
+	font-size: 24px;
+	border-top: 2px solid #5BB5E5;
+	border-bottom: 2px solid #5BB5E5;
+}
+	.mobile .nav_arrow {
+		background: white url('images/icons/arrow_icon.svg') 20px 50% no-repeat;
+		background-size: 30px 30px;
+		height: 40px;
+		line-height: 40px;
+		width: 120px;
+	}
+		.mobile .nav_arrow a {
+			display: block; 
+		}
+nav .nav_about {
+	background: white url('images/icons/aboutthestudy_icon.svg') 10px 50% no-repeat;
+	width: 100px;
+	font-size: 24px;
+	border: 1px solid #A7A9A8;
+	border-top: 3px solid #5BB5E5;
+}
+nav .nav_how {
+	background: white url('images/icons/howthisstudyworks_icon.svg') 10px 50% no-repeat;
+	width: 100px;
+	font-size: 24px;
+	border: 1px solid #A7A9A8;
+	border-top: 3px solid #EF4360;
+}
+nav .nav_who-eligible {
+	background: white url('images/icons/whoiseligible_icon.svg') 10px 50% no-repeat;
+	width: 100px;
+	font-size: 24px;
+	border: 1px solid #A7A9A8;
+	border-top: 3px solid #57BB6C;
+}
+nav .nav_who-running {
+	background: white url('images/icons/whoisrunningthestudy_icon.svg') 10px 50% no-repeat;
+	width: 100px;
+	font-size: 24px;
+	border: 1px solid #A7A9A8;
+	border-top: 3px solid #F3BB4d;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.panels {
+	margin: 20px 20px 20px 70px;
+	clear: both;
+}
+.panel {
+    border: 1px solid #A7A9A8;
+    background-color: #f9f9f9;
+    margin: 0 10px 10px 0px;
+    min-height: 100px;
+    width: 150px;
+    height: 210px;
+	display: inline-block;
+	vertical-align: top;
+}
+.panel.download h4 {
+	background: url(images/badges/downloadtheapp_graphic.svg) top center no-repeat;
+}
+.panel.consent h4 {
+	background: url(images/badges/giveconsent_graphic.svg) top center no-repeat;	
+}
+.panel.tasks h4 {
+	background: url(images/badges/performsimpletasks_graphic.svg) top center no-repeat;	
+}
+.panel.tracking h4 {
+	background: url(images/badges/trackyourhealth_graphic.svg) top center no-repeat;	
+}
+.panel.scientists h4 {
+	background: url(images/badges/scientistsmakediscoveries_graphic.svg) top center no-repeat;	
+}
+
+.panel h4 {
+	font-size: 16px;
+	margin: 10px;
+	text-align: center;
+	font-weight: 400;
+	padding-top: 70px;
+	height:35px;	
+}
+.panel p {
+	font-size: 12px;
+	margin: 10px;
+}
+
+section {
+}
+.inner {
+	max-width: 1024px; 
+	margin: 0 auto; 
+	padding: 0;	
+}
+section h3 {
+	margin: 15px 10px 15px 20px;
+	padding-left: 50px;
+	font-size: 22px;
+	height: 40px;
+	line-height: 40px;
+}
+section.about {
+	border-top: 3px solid #5BB5E5;
+}
+section.about h3, section.privacy h3 {
+	background: white url('images/icons/aboutthestudy_icon.svg') center left no-repeat;
+}
+section.how {
+	border-top: 3px solid #EF4360;
+}
+section.how h3 {
+	background: white url('images/icons/howthisstudyworks_icon.svg') center left no-repeat;
+}
+section.eligibility {
+	border-top: 3px solid #57BB6C;
+}
+section.eligibility h3 {
+	background: white url('images/icons/whoiseligible_icon.svg') center left no-repeat;
+}
+section.who {
+	border-top: 3px solid #F3BB4D;
+}
+section.who h3 {
+	background: white url('images/icons/whoisrunningthestudy_icon.svg') center left no-repeat;
+}
+section p {
+	margin: 10px 70px;
+	line-height: 1.4;
+}
+section ul {
+	margin: 15px 90px;
+	line-height: 1.4;
+}
+	ul li {
+		margin-bottom: 15px;
+	}
+	b {
+		font-weight: bold;
+	}
+video {
+	width: 200px; 
+	height 100px; 
+	float: left;
+	margin: 5px 10px 20px 70px;
+}
+.investigators {
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+.investigators td { 
+	text-align: center; 
+	padding: 10px;
+	margin: 20px 70px; 
+	vertical-align: top;
+}
+.investigators td div {
+	font-size: 14px;
+}
+.border {
+	border: 1px solid #EF4360;
+}
+.info {
+	text-align: center;
+	font-size: 14px;
+	margin: 10px 0;
+	
+}
+footer {
+	display: table;
+	width: 96%;
+	margin-left: 2%;
+	margin-bottom: 20px;
+}
+footer a {
+	display: table-cell;
+	width: 16%;
+	height: 80px;
+}
+footer span {
+	display: block;
+	height: 70px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 10px;
+}
+footer .sage_logo span {
+	background-image: url('images/logos/sage_logo.png');
+	background-position: center right;
+}
+footer .rwjf_logo span {
+	background-image: url('images/logos/rwjf_logo.jpg');
+}
+footer .sgk_logo span {
+	background-image: url('images/logos/susan-g-komen.jpg');
+}
+footer .bco_logo span {
+	background-image: url('images/logos/breastcancer-org.jpg');
+	background-size: 120%;
+}
+footer .afw_logo span {
+	background-image: url('images/logos/avonfdnforwomen.png');
+}
+footer .aow_logo span {
+	background-image: url('images/logos/armyofwomen.jpg');
+}
+footer .sl_logo span {
+	background-image: url('images/logos/susan-love.png');
+	background-size: 120%;
+}
+footer .mjff_logo span {
+	background-image: url('images/logos/mjff_logo.gif');
+}
+
+.more-text {
+	max-height: 0px;
+	overflow: hidden;
+	
+	webkit-transition: max-height 1.2s;
+	-moz-transition: max-height 1.2s;
+	transition: max-height 1.2s;
+}
+
+/* Media queries to resize the splash section on smaller screens. */
+@media (max-width:600px) {
+	header.mobile {
+		position: relative;
+		display: block;	
+	}
+	.mobile .nav_arrow {
+		width: 100%;
+		border-top: 2px solid #5BB5E5;
+		border-bottom: 2px solid #5BB5E5;
+	}
+	header.desktop, .padding, .splash {
+		display: none;
+	}
+	section p { 
+		margin: 10px 20px; 
+	}
+	section h3 {
+		line-height: 1;
+	}
+	section ul {
+		margin: 15px 20px 15px 40px;
+	}
+	.panels {
+		margin: 10px;
+	}
+	.panel {
+		width: 130px;
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	.investigators .border {
+		padding:0;
+		margin:5px;
+		width: 50%;	
+	}
+	.investigators table {
+		width: 100%;
+	}
+	.investigators table td {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.investigators img {
+		height: 140px ! important;
+	}
+	footer {
+		display: block;
+	}
+	footer a {
+		display: inline;
+	}
+	footer .sl_logo span {
+		background-size: 55% ! important;
+	}
+	footer a span {
+		background-size: contain ! important;
+	}
+	.after-video {
+		clear:both;
+	}
+}
