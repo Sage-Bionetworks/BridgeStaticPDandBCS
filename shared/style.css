@@ -50,7 +50,7 @@ header.mobile {
 header.mobile .title {
 	font-size: 22px;
 	color: #EF018D;
-	padding: 15px 10px 0px 10px;
+	padding: 15px 10px 0px 20px;
 }
 header.mobile .subtitle {
 	font-size: 13px;
@@ -169,9 +169,9 @@ header {
     border: 1px solid #A7A9A8;
     background-color: #f9f9f9;
     margin: 0 10px 10px 0px;
-    min-height: 100px;
+    min-height: 210px;
     width: 150px;
-    height: 210px;
+    /*height: 210px;*/
 	display: inline-block;
 	vertical-align: top;
 }
@@ -257,6 +257,9 @@ section h2 {
 section table, section h1, section h2 {
 	margin: 10px 70px ! important;
 }
+	.border table {
+		margin: 10px ! important;
+	}
 section table.info td {
 	text-align: left;
 	vertical-align: top;
@@ -264,6 +267,9 @@ section table.info td {
 }
 .consent h3 {
 	background-image: none;
+}
+.button_container {
+	margin: 20px 70px;
 }
 section ul {
 	margin: 15px 90px;
@@ -316,7 +322,7 @@ footer a {
 }
 footer span {
 	display: block;
-	height: 70px;
+	height: 80px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -324,9 +330,9 @@ footer span {
 }
 footer .sage_logo span {
 	background-image: url('images/logos/sage_logo.png');
-	background-position: center right;
 }
 footer .rwjf_logo span {
+	background-size: 105%;
 	background-image: url('images/logos/rwjf_logo.jpg');
 }
 footer .sgk_logo span {
@@ -349,7 +355,10 @@ footer .sl_logo span {
 footer .mjff_logo span {
 	background-image: url('images/logos/mjff_logo.gif');
 }
-
+footer .radbound_umc_logo span {
+	background-image: url('images/logos/radbound-umc.jpg');
+	background-size: 90%;
+}
 .more-text {
 	max-height: 0px;
 	overflow: hidden;
@@ -382,6 +391,10 @@ footer .mjff_logo span {
 	section ul {
 		margin: 15px 20px 15px 40px;
 	}
+	.button_container {
+		margin: 20px auto;
+		text-align: center;
+	}
 	.panels {
 		margin: 10px;
 	}
@@ -390,22 +403,24 @@ footer .mjff_logo span {
 		margin-right: 0;
 		margin-left: 10px;
 	}
-	.investigators .border {
-		padding:0;
-		margin:5px;
-		width: 50%;	
-	}
-	.investigators table {
-		width: 100%;
-	}
-	.investigators table td {
+	.investigators, .investigators table, .investigators tbody, .investigators tr {
 		display: block;
 		width: 100%;
-		margin: 0;
-		padding: 0;
+		margin: 0 ! important;
+		border: none;
 	}
-	.investigators img {
-		height: 140px ! important;
+	.investigators td {
+		display: block;
+		width: 100% ! important;
+		margin: 0 auto;
+		padding: 0;
+		border: none;
+	}
+	.investigators .border div:first-child {
+		margin: 20px 0;
+	}
+	.investigators .border img ~ div {
+		margin: 10px 0;
 	}
 	footer {
 		display: block;
