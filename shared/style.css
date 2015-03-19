@@ -318,11 +318,11 @@ footer {
 footer a {
 	display: table-cell;
 	width: 16%;
-	height: 80px;
+	height: 90px;
 }
 footer span {
 	display: block;
-	height: 80px;
+	height: 90px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
