@@ -3,7 +3,7 @@
     var scrolled = false,
         children = $("section");
 
-    $("nav a[data-for]").on('click', scroll);
+    $("nav a[data-for], .nav a[data-for]").on('click', scroll);
     
     $(".learn-more").on('click', function(e) {
         e.preventDefault();

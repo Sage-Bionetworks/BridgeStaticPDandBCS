@@ -242,9 +242,12 @@ section.who {
 section.who h3 {
 	background: white url('images/icons/whoisrunningthestudy_icon.svg') center left no-repeat;
 }
-section p {
+section p, section dl {
 	margin: 10px 70px;
 	line-height: 1.4;
+}
+section dd p {
+	margin-left: 20px;
 }
 section h1 {
 	margin: 10px 70px ! important;
@@ -382,7 +385,7 @@ footer .radbound_umc_logo span {
 	header.desktop, .padding, .splash {
 		display: none;
 	}
-	section p { 
+	section p, section dl { 
 		margin: 10px 20px; 
 	}
 	section h3 {
