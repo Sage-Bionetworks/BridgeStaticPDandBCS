@@ -453,4 +453,7 @@ footer .radbound_umc_logo span {
 	.after-video {
 		clear:both;
 	}
+	.important {
+		margin: 0 20px !important;
+	}
 }
