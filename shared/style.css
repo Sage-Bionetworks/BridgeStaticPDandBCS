@@ -217,19 +217,22 @@ header {
 	margin: 10px;
 }
 
-section {
-}
 .inner {
 	max-width: 1024px; 
 	margin: 0 auto; 
 	padding: 0;	
 }
-section h3 {
+section h3, section > .inner > h4 {
 	margin: 15px 10px 15px 20px;
 	padding-left: 50px;
 	font-size: 22px;
 	height: 40px;
 	line-height: 40px;
+}
+section > .inner > h4 {
+	font-size: 16px;
+	margin-bottom: -.25rem;
+	font-weight: bold;
 }
 section.about {
 	border-top: 3px solid #5BB5E5;
@@ -299,7 +302,6 @@ section ul {
 	}
 video {
 	width: 200px; 
-	height 100px; 
 	float: left;
 	margin: 5px 10px 20px 70px;
 }
@@ -378,8 +380,7 @@ footer .radbound_umc_logo span {
 .more-text {
 	max-height: 0px;
 	overflow: hidden;
-	
-	webkit-transition: max-height 1.2s;
+	-webkit-transition: max-height 1.2s;
 	-moz-transition: max-height 1.2s;
 	transition: max-height 1.2s;
 }
